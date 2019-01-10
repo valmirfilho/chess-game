@@ -5,6 +5,8 @@
  */
 package application;
 
+import boadgame.Position;
+
 /**
  *
  * @author valmir
@@ -12,5 +14,7 @@ package application;
 public class Program {
      public static void main(String[] args) {
          
+         Position pos = new Position(4, 9);
+         System.out.println(pos);
      }
 }
