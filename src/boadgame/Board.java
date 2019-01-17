@@ -61,6 +61,9 @@ public class Board {
         return positionExists(position.getRow(), position.getColumn());
     }
     public boolean thereIsAPiece(Position position){
+         if(!positionExists(position)) {
+            throw new BoardException("Não existe esta posição no tabuleiro");
+        }
         return piece(position)!= null;
     }
 }
