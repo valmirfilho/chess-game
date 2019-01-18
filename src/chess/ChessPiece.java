@@ -12,7 +12,7 @@ import boadgame.Piece;
  *
  * @author root
  */
-public class ChessPiece extends Piece {
+public abstract class ChessPiece extends Piece {
     
     private Color color;
 
